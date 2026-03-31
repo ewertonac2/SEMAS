@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - Programas Sociais | Sena Madureira</title>
+
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f8; }
+    header { 
+      background: #2c7be5; 
+      color: white; 
+      padding: 20px; 
+      text-align: center; 
+      position: relative;
+    }
+
+    /* Logos no rodapé */
+    .footer-logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    .footer-logos img {
+      height: 80px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .logo-prefeitura {
+      height: 100px; /* maior para destacar */
+    }
+
+    .logo-outra {
+      height: 80px;
+    }
+
+    .logo-left { left: 15px; }
+    .logo-right { right: 15px; }
+
+    .container { 
+      display: flex; 
+      max-width: 1100px; 
+      margin: 20px auto; 
+      gap: 20px; 
+      padding: 10px; 
+      align-items: flex-start; 
+    }
+
+    .faq-section {
+      flex: 2;
+      min-width: 0;
+    }
+    .contact-section {
+      flex: 1;
+      min-width: 250px;
+      position: sticky;
+      top: 20px;
+    }
+
+    .faq-item, .contact-box {
+      background: white;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 15px;
+    }
+
+    .faq-question { cursor: pointer; font-weight: bold; }
+    .faq-answer { display: none; margin-top: 10px; }
+
+    .whatsapp-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    /* CARROSSEL */
+    .carousel {
+      margin-top: 20px;
+      position: relative;
+      height: 250px;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #ddd;
+    }
+
+    .carousel img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.8s ease;
+    }
+
+    .carousel img.active {
+      opacity: 1;
+    }
+
+    footer { text-align: center; padding: 15px; color: #777; }
+
+    @media (max-width: 768px) {
+      .container { flex-direction: column; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>FAQ - SEMAS </h1>
+  <p>Sena Madureira - Tire suas dúvidas</p>
+</header>
+
+<div class="container">
+
+  <!-- ESQUERDA -->
+  <div class="faq-section">
+
+    <div class="faq-item">
+      <div class="faq-question">O que é o Bolsa Família?</div>
+      <div class="faq-answer"><p><strong>💰 O que é exatamente?</strong></p>
+<p>O Bolsa Família é um benefício em dinheiro pago todo mês, criado para garantir o básico às famílias, como alimentação, saúde e educação.</p>
+
+  <p><strong>👨‍👩‍👧‍👦 Quem tem direito?</strong></p>
+  <P>Podem receber:</P>
+<P>° Famílias com renda mensal baixa por pessoa</P>
+<P>° Famílias inscritas no Cadastro Único</P>
+<P>° Que mantenham os dados atualizados</P>
+
+<p><strong>📋 Quais são as regras?</strong></p>
+<p>Para continuar recebendo, a família precisa:</p>
+<p>° Cumprir o calendário de vacinação</p>
+<p>° Fazer o acompanhamento de saúde (principalmente gestantes e crianças)</p>
+<p>° Manter crianças e adolescentes na escola</p>
+<p><strong>💵 Quanto recebe?</strong></p>
+<p>° O valor varia conforme a família, mas inclui:</p>
+<p>° Valor mínimo garantido</p>
+<p>° Benefícios extras dependendo da situação</p>
+<p><strong>🧭 Resumindo:</strong></p>
+<p>O Bolsa Família é um programa que combate a pobreza e ajuda famílias a terem uma vida mais digna, ao mesmo tempo incentivando educação e saúde.</p>
+
+</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">O que é o CRAS?</div>
+      <div class="faq-answer"><p>O CRAS é a porta de entrada para os serviços sociais. Ele atende principalmente famílias em situação de vulnerabilidade.</p>
+
+  <p>Entre os principais serviços estão: Acompanhamento familiar, atendimento com assistente social e psicólogo, participação em programas e oficinas.
+
+  <p><strong>Quem pode procurar?</strong> Famílias de baixa renda, idosos, crianças e pessoas com deficiência.</p>
+
+  <p><strong>Resumo:</strong> O CRAS é o lugar onde você vai quando precisa de ajuda do governo na área social.</p>
+</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">O que é o CREAS?</div>
+      <div class="faq-answer">Atendimento a situações de risco social.</div>
+    </div>
+
+    <!-- CARROSSEL -->
+    <div class="carousel">
+      <img src="foto2.png.jpeg" class="active">
+      <img src="foto3.png.jpeg">
+      <img src="https://picsum.photos/800/250?3">
+    </div>
+
+  </div>
+
+  <!-- DIREITA -->
+  <div class="contact-section">
+
+    <div class="contact-box">
+      <strong>Bolsa Família</strong>
+      <br>
+      <a class="whatsapp-btn" href="https://wa.me/556899448281" target="_blank">Falar no WhatsApp</a>
+    </div>
+
+    <div class="contact-box">
+      <strong>CRAS</strong>
+      <br>
+      <a class="whatsapp-btn" href="https://wa.me/5599999999999" target="_blank">Falar no WhatsApp</a>
+    </div>
+
+    <div class="contact-box">
+      <strong>CREAS</strong>
+      <br>
+      <a class="whatsapp-btn" href="https://wa.me/5599999999999" target="_blank">Falar no WhatsApp</a>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Prefeitura de Sena Madureira
+
+  <div class="footer-logos">
+    <img src="logo-prefeitura.png" class="logo-prefeitura" alt="Logo Prefeitura">
+    <img src="logo-outra.png" class="logo-outra" alt="Outra Logo">
+  </div>
+</footer>
+
+<script>
+  // FAQ
+  document.querySelectorAll('.faq-question').forEach(q => {
+    q.addEventListener('click', () => {
+      const a = q.nextElementSibling;
+      a.style.display = a.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+
+  // CARROSSEL
+  const imgs = document.querySelectorAll('.carousel img');
+  let i = 0;
+
+  setInterval(() => {
+    imgs[i].classList.remove('active');
+    i = (i + 1) % imgs.length;
+    imgs[i].classList.add('active');
+  }, 3000);
+</script>
+
+</body>
+</html>
