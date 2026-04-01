@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notícias - SEMAS</title>
+
+<style>
+body { font-family: Arial; margin:0; background:#f4f6f8; }
+
+header {
+  background:#2c7be5;
+  color:white;
+  padding:20px;
+  text-align:center;
+}
+
+.container {
+  max-width:1000px;
+  margin:20px auto;
+  padding:10px;
+}
+
+.noticia {
+  background:white;
+  margin-bottom:20px;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.noticia:hover {
+  transform: scale(1.01);
+}
+
+.noticia img {
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.noticia-content {
+  padding:15px;
+}
+
+.noticia h2 {
+  margin:0 0 10px 0;
+}
+
+.meta {
+  font-size: 12px;
+  color:#777;
+  margin-bottom:10px;
+}
+
+.noticia p {
+  color:#555;
+}
+
+.btn {
+  display:inline-block;
+  margin-top:10px;
+  padding:8px 12px;
+  background:#2c7be5;
+  color:white;
+  text-decoration:none;
+  border-radius:5px;
+  font-size:14px;
+}
+
+.btn-voltar {
+  display:inline-block;
+  margin-top:20px;
+  padding:10px 15px;
+  background:#555;
+  color:white;
+  text-decoration:none;
+  border-radius:5px;
+}
+
+footer {
+  text-align:center;
+  padding:15px;
+  color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Notícias - SEMAS</h1>
+  <p>Secretaria Municipal de Assistência Social - Sena Madureira</p>
+</header>
+
+<div class="container">
+
+  <!-- NOTÍCIA -->
+  <div class="noticia">
+    <img src="https://picsum.photos/800/300?1">
+    <div class="noticia-content">
+      <h2>Atendimento do CRAS é ampliado</h2>
+      <div class="meta">📅 30/03/2026 | 👤 SEMAS</div>
+      <p>A Secretaria ampliou os atendimentos para melhor atender a população.</p>
+      <a href="#" class="btn">Ler mais</a>
+    </div>
+  </div>
+
+  <!-- NOTÍCIA -->
+  <div class="noticia">
+    <img src="https://picsum.photos/800/300?2">
+    <div class="noticia-content">
+      <h2>Atualização do Cadastro Único</h2>
+      <div class="meta">📅 28/03/2026 | 👤 SEMAS</div>
+      <p>Famílias devem atualizar seus dados para manter benefícios.</p>
+      <a href="#" class="btn">Ler mais</a>
+    </div>
+  </div>
+
+  <!-- NOTÍCIA -->
+  <div class="noticia">
+    <img src="https://picsum.photos/800/300?3">
+    <div class="noticia-content">
+      <h2>Atividades do SCFV</h2>
+      <div class="meta">📅 25/03/2026 | 👤 SEMAS</div>
+      <p>Crianças e adolescentes participam de atividades educativas.</p>
+      <a href="#" class="btn">Ler mais</a>
+    </div>
+  </div>
+
+  <a href="noticia1.html" class="btn">Ler mais</a>
+
+</div>
+
+<footer>
+  © 2026 Prefeitura de Sena Madureira
+</footer>
+
+</body>
+</html>

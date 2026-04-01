@@ -7,13 +7,33 @@
 
   <style>
     body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f8; }
-    header { 
-      background: #2c7be5; 
-      color: white; 
-      padding: 20px; 
-      text-align: center; 
-      position: relative;
-    }
+    header {
+  background: #2c7be5;
+  color: white;
+  padding: 20px 15px;
+  text-align: center;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .btn-noticias {
+    position: static;
+    display: inline-block;
+    margin-top: 10px;
+  }
+}
+
+    .btn-noticias {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: #ffffff;
+  color: #2c7be5;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
     /* Logos no rodapé */
     .footer-logos {
@@ -69,13 +89,24 @@
       padding: 15px;
     }
 
-    .faq-question { cursor: pointer; font-weight: bold; }
+    .faq-question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.faq-question:active {
+  background: #e6f0ff;
+}
     .faq-answer { display: none; margin-top: 10px; }
 
-    .whatsapp-btn {
-      display: inline-block;
+        .whatsapp-btn {
+      display: block;
       margin-top: 10px;
-      padding: 10px 15px;
+      padding: 12px;
+      text-align: center;
+      font-size: 16px;
       background: #25D366;
       color: white;
       text-decoration: none;
@@ -84,23 +115,30 @@
     }
 
     /* CARROSSEL */
-    .carousel {
-      margin-top: 20px;
-      position: relative;
-      height: 250px;
-      border-radius: 10px;
+      .carousel {
+    margin-top: 30px;
+    position: relative;
+    height: 300px;
+      border-radius: 20px;
       overflow: hidden;
       background: #ddd;
     }
 
+    @media (max-width: 600px) {
+  .carousel {
+    height: 200px;
+  }
+}
+
     .carousel img {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0;
-      transition: opacity 0.8s ease;
-    }
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* NÃO CORTA A IMAGEM */
+  background: #000; /* opcional: fundo preto */
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
 
     .carousel img.active {
       opacity: 1;
@@ -109,8 +147,40 @@
     footer { text-align: center; padding: 15px; color: #777; }
 
     @media (max-width: 768px) {
-      .container { flex-direction: column; }
-    }
+  .container {
+    flex-direction: column;
+  }
+
+  .contact-section {
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 5px;
+  }
+
+  .faq-item, .contact-box {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+
+    
   </style>
 </head>
 
@@ -119,6 +189,10 @@
 <header>
   <h1>FAQ - SEMAS </h1>
   <p>Sena Madureira - Tire suas dúvidas</p>
+
+   <a href="noticias.html" target="_blank" class="btn-noticias">Notícias</a>
+
+
 </header>
 
 <div class="container">
@@ -167,13 +241,27 @@
     <div class="faq-item">
       <div class="faq-question">O que é o CREAS?</div>
       <div class="faq-answer">Atendimento a situações de risco social.</div>
+      
     </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Calculadora Bolsa Familia. -> Saiba se está dentro da renda</div>
+      <div class="faq-answer">
+        
+<P><strong>Como saber se sua familia está dentro da renda percapita para ter direito ao Bolsa Familia? Faça o calculo aqui.</P></strong>
+
+       <P> <a href="calculadora.html">
+  <button>Calculadora Bolsa Família</button> </a></div></P>
+
+      </div>
 
     <!-- CARROSSEL -->
     <div class="carousel">
       <img src="foto2.png.jpeg" class="active">
       <img src="foto3.png.jpeg">
-      <img src="https://picsum.photos/800/250?3">
+      <img src="FOTO4.png.jpeg">
+      <img src="foto5.png.jpeg">
+      <img src="foto6.png.jpeg">
     </div>
 
   </div>
@@ -207,8 +295,8 @@
   © 2026 Prefeitura de Sena Madureira
 
   <div class="footer-logos">
-    <img src="logo-prefeitura.png" class="logo-prefeitura" alt="Logo Prefeitura">
-    <img src="logo-outra.png" class="logo-outra" alt="Outra Logo">
+    <img src="logo_semas.png.png" class="logo-prefeitura" alt="Logo Prefeitura">
+    <img src="prefeitura.png.png" class="logo-outra" alt="Outra Logo">
   </div>
 </footer>
 

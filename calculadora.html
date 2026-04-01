@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora Bolsa Família</title>
+</head>
+<body>
+
+<body>
+
+<!-- CALCULADORA BOLSA FAMÍLIA -->
+<div style="max-width:400px;margin:auto;padding:20px;border:1px solid #ccc;border-radius:10px;font-family:Arial;">
+  <h2>Calculadora Bolsa Família</h2>
+
+  <label>Renda total da família (R$):</label><br>
+  <input type="number" id="renda"><br><br>
+
+  <label>Número de pessoas na família:</label><br>
+  <input type="number" id="pessoas"><br><br>
+
+  <button onclick="calcular()">Verificar</button>
+
+  <p id="resultado"></p>
+</div>
+
+<script>
+function calcular() {
+  let renda = parseFloat(document.getElementById("renda").value);
+  let pessoas = parseInt(document.getElementById("pessoas").value);
+
+  if (!renda || !pessoas || pessoas <= 0) {
+    document.getElementById("resultado").innerText = "Preencha corretamente.";
+    return;
+  }
+
+  let rendaPorPessoa = renda / pessoas;
+
+  if (rendaPorPessoa <= 218) {
+    document.getElementById("resultado").innerText =
+      "✅ Pode ter direito ao Bolsa Família";
+  } else {
+    document.getElementById("resultado").innerText =
+      "❌ Não tem direito";
+  }
+}
+</script>
+
+</body>
+
+</body>
+</html>
